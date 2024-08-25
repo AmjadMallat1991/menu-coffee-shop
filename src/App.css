@@ -1,38 +1,115 @@
-.App {
+/* src/App.css */
+
+/* Body and General Styling */
+body {
+  background-color: white; /* Background color */
+  color: #003d22; /* Dark green text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Logo Image Styling */
+.header-logo {
+  width: 100%; /* Full width */
+  height: 400px; /* Adjust height as needed */
+  margin: 0; /* Remove margin */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header Contact Information Styling */
+.header-contact {
+  margin-top: 10px;
+  color: #003d22; /* Dark green text color for contact details */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-contact p {
+  margin: 5px 0;
+  font-size: 18px; /* Adjust font size */
+}
+
+/* Icon Styling */
+.header-contact i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Menu Container Styling */
+.menu-container {
+  padding: 0 20px;
+  margin-top: 0; /* Remove margin between header and items */
+}
+
+/* Category Title Styling */
+.menu-category h2 {
+  color: #003d22; /* Dark green for category titles */
+  border-bottom: 2px solid #003d22; /* Underline effect */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Menu Items Layout */
+.menu-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
 }
 
-.App-link {
-  color: #61dafb;
+/* Individual Menu Item Styling */
+.menu-item {
+  display: flex;
+  background-color: #ffffff; /* White background for items */
+  padding: 10px;
+  border-radius: 10px;
+  width: calc(50% - 20px); /* Make items responsive on larger screens */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Item Image Styling */
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Item Details Styling */
+.item-details {
+  margin-left: 20px;
+}
+
+/* Item Name Styling */
+.item-details h3 {
+  color: #003d22; /* Dark green for item names */
+  margin: 0;
+}
+
+/* Item Description Styling */
+.item-details p {
+  margin: 15px 0;
+  color: #003d22;
+}
+
+/* Item Price Styling */
+.item-details span {
+  font-weight: bold;
+  color: #003d22; /* Dark green for prices */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-item {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center; /* Center align items */
   }
-  to {
-    transform: rotate(360deg);
+
+  .item-details {
+    margin-left: 0;
+    text-align: center; /* Center align text */
   }
 }

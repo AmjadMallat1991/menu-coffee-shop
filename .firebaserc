@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "wid-coffee-shop-menu",
+    "widcafe": "wid-coffee-shop-menu"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
